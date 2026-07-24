@@ -1,24 +1,22 @@
 let doctors = [];
 
-const elements = {
-  searchInput: document.querySelector("#searchInput"),
+let searchInput = document.getElementById("searchInput");
 
-  specializationFilter: document.querySelector("#specializationFilter"),
+let specializationFilter = document.getElementById("specializationFilter");
 
-  sortDoctors: document.querySelector("#sortDoctors"),
+let sortDoctors = document.getElementById("sortDoctors");
 
-  doctorList: document.querySelector("#doctorList"),
+let doctorList = document.getElementById("doctorList");
 
-  doctorCount: document.querySelector("#doctorCount"),
+let doctorCount = document.getElementById("doctorCount");
 
-  averageRating: document.querySelector("#avgRatingText"),
+let averageRating = document.getElementById("avgRatingText");
 
-  loadingState: document.querySelector("#loadingState"),
+let loadingState = document.getElementById("loadingState");
 
-  emptyState: document.querySelector("#emptyState"),
-};
+let emptyState = document.getElementById("emptyState");
 
-const showLoading = () => {
+function showLoading () {
   if (elements.loadingState) {
     elements.loadingState.classList.remove("d-none");
   }
@@ -30,7 +28,7 @@ const showLoading = () => {
   if (elements.emptyState) {
     elements.emptyState.classList.add("d-none");
   }
-};
+}
 
 const hideLoading = () => {
   if (elements.loadingState) {
@@ -71,9 +69,15 @@ const updateStatistics = (doctorList) => {
     return;
   }
 
-  const totalRating = doctorList.reduce((sum, doctor) => {
-    return sum + Number(doctor.rating || 0);
-  }, 0);
+  let totalRating=0;
+
+for(let i=0;i<doctorList.length;i++){
+
+totalRating+=doctorList[i].rating;
+
+}
+
+let average=(totalRating/doctorList.length).toFixed(1);
 
   const average = (totalRating / doctorList.length).toFixed(1);
 
