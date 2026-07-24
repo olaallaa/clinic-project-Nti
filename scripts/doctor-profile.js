@@ -1,44 +1,43 @@
-const profileContainer = document.getElementById("profileContainer");
+let profileContainer = document.getElementById("profileContainer");
 
 let doctors = [];
 
 let selectedDoctor = null;
 
-document.addEventListener("DOMContentLoaded", initializePage);
+document.addEventListener("DOMContentLoaded", function () {
+    initializePage();
+});
 
 async function initializePage() {
 
-    await Promise.all([
+    await loadComponent(
+        "navbarContainer",
+        "components/navbar.html"
+    );
 
-        loadComponent(
-            "navbarContainer",
-            "components/navbar.html"
-        ),
+    await loadComponent(
+        "footerContainer",
+        "components/footer.html"
+    );
 
-        loadComponent(
-            "footerContainer",
-            "components/footer.html"
-        )
-
-    ]);
-
-    // لازم يكونوا هنا مباشرة
     highlightActiveLink();
     renderAuthUI();
     updateFooterYear();
 
-    const doctorId = getDoctorId();
+    let doctorId = getDoctorId();
 
-    if (doctorId === null) {
+    if (doctorId == null) {
         showInvalidDoctor();
         return;
     }
 
-    doctors = await fetchDoctors();
+    let response = await fetch("data/doctors.json");
+
+    doctors = await response.json();
 
     selectedDoctor = findDoctorById(doctorId);
 
-    if (!selectedDoctor) {
+    if (selectedDoctor == null) {
         showDoctorNotFound();
         return;
     }
@@ -85,7 +84,16 @@ async function fetchDoctors() {
 }
 
 function findDoctorById(id) {
-  return doctors.find((doctor) => doctor.id === id);
+
+    for (let i = 0; i < doctors.length; i++) {
+
+        if (doctors[i].id == id) {
+            return doctors[i];
+        }
+
+    }
+
+    return null;
 }
 
 function renderDoctorProfile(doctor) {
@@ -94,41 +102,56 @@ function renderDoctorProfile(doctor) {
   let qualifications = "<li>No qualifications available</li>";
 
   if (Array.isArray(doctor.qualifications) && doctor.qualifications.length) {
-    qualifications = doctor.qualifications
-      .map((item) => {
-        return `
+    let qualifications = "";
 
-                <li class="mb-2">
+if (doctor.qualifications.length > 0) {
 
-                    <i class="fa-solid fa-award text-primary me-2"></i>
+    for (let i = 0; i < doctor.qualifications.length; i++) {
 
-                    ${item}
+        qualifications += `
+        <li class="mb-2">
+            <i class="fa-solid fa-award text-primary me-2"></i>
+            ${doctor.qualifications[i]}
+        </li>
+        `;
 
-                </li>
+    }
 
-                `;
-      })
-      .join("");
+} else {
+
+    qualifications = "<li>No qualifications available</li>";
+
+}
   }
 
   let certificates = "<li>No certificates available</li>";
 
   if (Array.isArray(doctor.certificates) && doctor.certificates.length) {
-    certificates = doctor.certificates
-      .map((item) => {
-        return `
+   let certificates = "";
 
-                <li class="mb-2">
+if (doctor.certificates.length > 0) {
 
-                    <i class="fa-solid fa-certificate text-success me-2"></i>
+    for (let i = 0; i < doctor.certificates.length; i++) {
 
-                    ${item}
+        certificates += `
 
-                </li>
+        <li class="mb-2">
 
-                `;
-      })
-      .join("");
+            <i class="fa-solid fa-certificate text-success me-2"></i>
+
+            ${doctor.certificates[i]}
+
+        </li>
+
+        `;
+
+    }
+
+} else {
+
+    certificates = "<li>No certificates available</li>";
+
+}
   }
 
   let gallery = "";
@@ -137,22 +160,28 @@ function renderDoctorProfile(doctor) {
     Array.isArray(doctor.beforeAfterImages) &&
     doctor.beforeAfterImages.length
   ) {
-    gallery = doctor.beforeAfterImages
-      .map((image) => {
-        return `
+   let gallery = "";
 
-                <div class="col-md-6">
+if (doctor.beforeAfterImages && doctor.beforeAfterImages.length > 0) {
 
-                    <img
-                        src="${image}"
-                        class="before-after-img rounded shadow-sm"
-                        alt="Before and After dental case">
+    for (let i = 0; i < doctor.beforeAfterImages.length; i++) {
 
-                </div>
+        gallery += `
 
-                `;
-      })
-      .join("");
+        <div class="col-md-6">
+
+            <img
+                src="${doctor.beforeAfterImages[i]}"
+                class="before-after-img rounded shadow-sm"
+                alt="Before and After dental case">
+
+        </div>
+
+        `;
+
+    }
+
+}
   }
 
   profileContainer.innerHTML = `
