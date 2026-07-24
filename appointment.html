@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/appointment.css" />
+    <title>Appointment</title>
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+
+    <div class="appoint border border-1 my-5 w-75 m-auto p-3">
+      <h1 class="text-center fw-bolder my-5" style="color: #1565d8">
+        Appointment
+      </h1>
+      <p class="fw-bold text-light-emphasis text-center">
+        Book your medical appointment in just a few simple steps. Our
+        experienced <br />healthcare professionals are ready to provide you with
+        the best care<br />
+        possible.
+      </p>
+      <div class="iconp d-flex justify-content-around my-4">
+        <div class="iconc text-center">
+          <h4>Select Service</h4>
+          <i
+            class="fa-regular fa-calendar-check rounded-3 fs-1 text-light text-center my-1"
+            style="background-color: #1565d8"
+          ></i>
+          <p class="my-1">choose a medical service you need</p>
+        </div>
+        <div class="iconc text-center">
+          <h4>Pick Date & Time</h4>
+          <i
+            class="fa-regular fa-clock rounded-3 fs-1 text-light text-center my-1"
+            style="background-color: #1565d8"
+          ></i>
+
+          <p class="my-1">Select your preferred appointment slot</p>
+        </div>
+        <div class="iconc text-center">
+          <h4>Confirm Details</h4>
+          <i
+            class="fa-solid fa-user-check rounded-3 fs-1 text-light text-center my-1"
+            style="background-color: #1565d8"
+          ></i>
+
+          <p class="my-1">Select your preferred appointment slot</p>
+        </div>
+      </div>
+      <div class="container w-50 my-5">
+        <form>
+          <label for="pname" class="fw-bold">Patient Name</label><br />
+          <input
+            type="text"
+            name="pname"
+            id="pname"
+            class="form-control my-2"
+          />
+          <label for="email" class="fw-bold">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control my-2"
+            placeholder="example@gmail.com"
+          />
+          <label for="phone" class="fw-bold">Phone Number</label><br />
+          <input type="tel" name="phone" id="phone" class="form-control my-2" />
+          <<select class="my-3 w-100" id="service">
+            <option value="" selected disabled>Select Service</option>
+            <option value="dental checkup & cleaning">
+              Dental Checkup & Cleaning
+            </option>
+            <option value="dental fillings">Dental Fillings</option>
+            <option value="root canal treatment">Root Canal Treatment</option>
+            <option value="teeth whitening">Teeth Whitening</option>
+            <option value="orthodontics">Orthodontics</option>
+            <option value="dental implants">Dental Implants</option>
+            <option value="tooth extraction">Tooth Extraction</option>
+          </select>
+          <input type="date" name="date" class="w-100 my-2" id="date" />
+          <input type="time" name="time" class="w-100 my-2" id="time" />
+          <select class="my-3 w-100" id="Doctor">
+            <option selected hidden class="fw-bolder">Select Doctor</option>
+            <option>Dr. Ahmed Yasser</option>
+            <option>Dr. Sara Mohamed</option>
+            <option>Dr. Menna Mostafa</option>
+            <option>Dr. Mohamed Sabry</option>
+            <option>Dr. Khaled Ahmed</option>
+            <option>Dr. Mariam Adel</option>
+            <option>Dr. Michael George</option>
+          </select>
+          <textarea
+            class="my-2 rounded-3 w-100"
+            placeholder="additional notes or symptoms (optional)"
+            cols="6"
+            rows="5"
+            id="notes"
+          ></textarea>
+        </form>
+        <div class="button">
+          <button
+            type="submit"
+            class="btn rounded-4 my-3 d-block"
+            id="bookBtn"
+            onclick="bookAppointment()"
+            style="background-color: #1565d8; color: white"
+          >
+            Book Appointment
+          </button>
+          <button
+            type="button"
+            class="btn btn-success rounded-4 my-3 d-none"
+            id="updateBtn"
+            onclick="patientUpdate()"
+          >
+            update
+          </button>
+        </div>
+        <div class="warning bg-primary-subtle my-3 text-center">
+          <p>
+            <i class="fa-solid fa-triangle-exclamation text-danger"></i> For
+            medical emergencies, please call
+            <span class="text-danger">911</span> or go to the nearest emergency
+            room.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div id="footerContainer"></div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/appointment.js"></script>
+  </body>
+</html>

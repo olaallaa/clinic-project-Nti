@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/ecommerce.css" />
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+
+    <br />
+    <div class="parent d-flex justify-content-start align-items-center">
+      <div class="child mx-3 fw-bolder fs-1">
+        <p>
+          we Provide <span style="color: #1565d8">Medical</span> <br />Services
+          That You Can <span style="color: #1565d8">Trust</span>
+        </p>
+        <a href="#x">
+          <button
+            class="btn d-block fs-2"
+            style="color: white; background-color: #1565d8"
+          >
+            shop now
+          </button></a
+        >
+      </div>
+    </div>
+    <br />
+    <h2 class="text-center bg-primary-subtle">
+      Latest <span style="color: #1565d8">Products</span>
+    </h2>
+
+    <br />
+    <div class="container" id="x">
+      <div class="row justify-content-around">
+        <div class="col-md-3 product-card">
+          <img src="images/store/toothbrush2.jpg" alt="toothbrush" class="w-100" />
+          <h3 class="text-center fw-bold">Tooth Brush</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$40</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 mx-4 product-card">
+          <img src="images/store/mouthwash.jpg" alt="mouthwash" class="w-100" />
+          <h3 class="text-center fw-bold">Mouth Wash</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$450</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/guard.jpg" alt="water floss" class="w-100" />
+          <h3 class="text-center fw-bold">Night Guard</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$180</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-4 product-card">
+          <img src="images/store/orthodontic wax.jpg" alt="wax" class="w-100" />
+          <h3 class="text-center fw-bold">orthodontic wax</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$2,454</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-4 my-4 product-card">
+          <img src="images/store/wheting kit.jpg" alt="kit" class="w-100" />
+          <h3 class="text-center fw-bold">Whitening Kit</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$3,699</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/waterfloss.jpg" alt="water floss" class="w-100" />
+          <h3 class="text-center fw-bold">Water flosser</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$500</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/electric.jpg" alt="etoothbrush" class="w-100" />
+          <h3 class="text-center fw-bold">Electric Toothbrush</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$1,299</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 product-card">
+          <img src="images/store/toothpaste2.jpg" alt="toothpaste" class="w-100" />
+          <h3 class="text-center fw-bold">Toothpaste</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$100</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/clean.jpg" alt="dental cleaning tablets" class="w-100" />
+          <h3 class="text-center fw-bold">Denture Cleaning</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$250</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/interdental.jpg" alt="interdental brush" class="w-100" />
+          <h3 class="text-center fw-bold">Interdental Brushes</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$200</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/floss.jpg" alt="dental floss" class="w-100" />
+          <h3 class="text-center fw-bold">Dental floss</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$150</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="col-md-3 my-4 product-card">
+          <img src="images/store/kid.jpg" alt="kids  cleaning kit" class="w-100" />
+          <h3 class="text-center fw-bold">Kids Dental Kit</h3>
+          <p class="text-center fw-bold fs-3" style="color: #1565d8">$300</p>
+          <button
+            class="btn btn-outline-primary d-block mx-auto"
+            onclick="addToCart()"
+          >
+            add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+   
+    <div
+      id="successMsg"
+      class="position-fixed top-50 start-50 translate-middle bg-light text-primary p-4 rounded shadow d-none"
+    >
+      ✅ Product added to cart successfully!
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+
+    <script src="scripts/store.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ContactUs</title>
+    <meta name="description" content="This is contact-us Page" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images\contact-us.png">
+</head>
+
+<body>
+
+    <div id="navbarContainer"></div>
+
+    <!--ContactUs page-->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-lg-8">
+                    <h1>Contact Us</h1>
+                    <p>We're always happy to hear from you. Whether you need assistance, have a question, or want to
+                        schedule an appointment, our team is ready to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact Info-->
+    <section class="contact py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <span>Get In Touch</span>
+                <h2> We'd Love To Hear From You</h2>
+                <p> Have questions or need help? Fill out the form and our team will get back to you as soon as
+                    possible.</p>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>15 Tahrir St, Cairo, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+20 100 000 0000</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>hello@brightlinedental.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p>Sat - Thu</p>
+                                <p> 9:00 AM - 8:00 PM</p>
+                                <span id="clinicStatus" class="badge bg-success">
+                                    Open Now
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Form-->
+                <div class="col-lg-7">
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" id="un" required>
+                                <div class="invalid-feedback">Please enter a valid name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" id="em" required>
+                                <div class="invalid-feedback">Please enter a valid email. </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="up" required>
+                                <div class="invalid-feedback">Please enter a valid Phone number. </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Subject" id="us" required>
+                                <div class="invalid-feedback">Subject must be at least 3 characters.</div>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="6" placeholder="Your Message" id="um"
+                                    required></textarea>
+                                <div class="invalid-feedback">Message must be between 10 and 500 characters.</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn send-btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    <hr>
+    <section class="faq py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <span>FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to the most common questions about our clinic and dental services.</p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#questionOne">
+                            Do I need an appointment before visiting?</button>
+                    </h2>
+                    <div id="questionOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. Booking an appointment helps us provide faster service and reduce waiting time.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#questionTwo">
+                            What are your working hours?</button>
+                    </h2>
+                    <div id="questionTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are available from Saturday to Thursday, 9:00 AM to 8:00 PM.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#questionThree">
+                            Do you provide dental care for children?</button>
+                    </h2>
+                    <div id="questionThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide specialized dental care for children of all ages.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#questionFour">
+                            Can I reschedule my appointment?</button>
+                    </h2>
+                    <div id="questionFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. Log in to your account, open your dashboard, and update your appointment with just a
+                            few clicks.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Map-Location-->
+    <section class="map py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <span>Find Us</span>
+                <h2>Visit Our Clinic</h2>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=Cairo,Egypt&output=embed" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Follow Us-->
+    <section class="follow-us py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <span>Follow Us</span>
+                <h2> Stay Connected</h2>
+                <p>Follow Us for More Updates</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <a href="https://www.facebook.com/share/1BtN2zomDs/?mibextid=wwXIfr" target="_blank"
+                        class="social-card">
+                        <i class="fa-brands fa-facebook"></i>
+                        <h5>Facebook</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.instagram.com/art_dent.eg?igsh=MWp5a3EyNG4zcnFkbQ%3D%3D&utm_source=qr"
+                        target="_blank" class="social-card">
+                        <i class="fa-brands fa-instagram"></i>
+                        <h5>Instagram</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.tiktok.com/@art.dent2?_r=1&_t=ZS-988oeji9XVt" target="_blank"
+                        class="social-card">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <h5>TikTok</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" target="_blank" class="social-card">
+                        <i class="fa-brands fa-youtube"></i>
+                        <h5>YouTube</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footerContainer"></div>
+
+
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/contactUs.js"></script>
+</body>
+
+</html>

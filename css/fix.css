@@ -1,0 +1,14 @@
+#imageTwo{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    position: absolute;
+    bottom: -60px;
+    left: 75%;
+
+    transform: translateX(-50%);
+
+    border: 6px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}

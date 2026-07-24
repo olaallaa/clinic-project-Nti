@@ -1,0 +1,375 @@
+.parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/store/doctor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.child{
+    width: 25%;
+}
+.child .btn{
+    transition: transform 0.3s ease;
+}
+
+.child .btn:hover{
+    transform: translateY(-4px);
+     box-shadow: 0 8px 15px rgba(21, 101, 216, 0.3);
+}
+
+@media screen  and (max-width:600px){
+ .parent{
+    width: 100%;
+    height: 450px;
+ }
+    
+} 
+.child a {
+    text-decoration: none;
+}
+
+.location a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+
+}
+.location a:hover{
+    color:black;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #FEFEFE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #81BCCE;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: auto;
+    margin-left: -20px;
+}
+
+.logo-icon {
+    background-color: #1565D8;
+    color: #ffffff;
+    padding: 12px 14px; 
+    border-radius: 10px; 
+    font-size: 22px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+}
+.logo h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0A2540;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0A2540;
+    margin: 0 12px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar a.active::after, .navbar a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #1565D8;
+}
+
+.header-btns {
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #0A2540;
+    padding: 10px 25px;
+    border: 1px solid #0A2540;
+    border-radius: 25px;
+}
+
+.btn-register {
+    text-decoration: none;
+    color: white;
+    background-color: #1565D8;
+    padding: 10px 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(21, 101, 216, 0.3);
+}
+
+.btn-register:hover {
+    background-color: #0b4fa8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(21, 101, 216, 0.4);
+}
+
+.btn-login:hover {
+    background-color: #0A2540;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+.cart-icon{
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.cart-icon:hover{
+    color: #0d6efd !important;
+
+    transform: scale(1.2);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #FEFEFE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #81BCCE;
+}
+
+@media screen and (max-width: 768px) {
+      .navbar-toggler {
+        margin-left: auto;
+        margin-top: -40px;
+    }
+    .navbar-collapse {
+        margin-top: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 8px 0;
+    }
+    .header-btns {
+        flex-direction: column;
+        gap: 10px;
+        margin: 5px 0 0 0;
+        text-align: center;
+    }
+
+
+}
+
+.product-card {
+    padding: 15px;
+    border-radius: 12px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(21, 101, 216, 0.2);
+    background-color: #f8faff;
+}
+
+.product-card img {
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+.cart-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #1565D8;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.footer {
+  background-color: #05192d;
+  color: white;
+  padding: 35px 8% 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer-content, .footer-side-col, .footer-links-call {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-side-col {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h4, .footer-links-call h4 {
+  margin-bottom: 20px;
+   font-size: 18px;
+}
+
+.h-style{
+    color: #0d6efd;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 2.5;
+}
+
+.footer-links ul li a:hover {
+  color: #0d6efd;
+}
+
+.footer-links-call p {
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-footer-icons i {
+  background: #1a3a5a;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-footer-icons i:hover{
+    background-color: #0d6efd;
+    color: #0D2540;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1a3a5a;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #8899aa;
+  font-size: 15px;
+}
+
+.footer-last span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.hover-word:hover{
+    color: #0d6efd;
+} 
+ 
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 30px 6% 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-side-col {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-content, 
+    .footer-side-col, 
+    .footer-links-call {
+        min-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-last {
+        margin-top: 5px;
+    }
+
+    .footer-last span {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-text h3 {
+        font-size: 20px;
+    }
+
+    .social-footer-icons {
+        justify-content: center;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+}

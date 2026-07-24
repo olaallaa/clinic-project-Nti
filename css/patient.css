@@ -1,0 +1,147 @@
+:root {
+  --bg-light: #f8fafc;
+
+  --upcoming-bg: #dbeafe;
+  --upcoming-text: #1d4ed8;
+
+  --completed-bg: #dcfce7;
+  --completed-text: #15803d;
+
+  --cancelled-bg: #fee2e2;
+  --cancelled-text: #b91c1c;
+}
+
+body {
+  background-color: var(--bg-light);
+}
+
+.card-profile {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.card-profile:hover {
+  transform: translateY(-3px);
+}
+
+.profile-avatar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.appointment-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.date-badge {
+  width: 55px;
+  height: 55px;
+
+  background: #f1f5f9;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+
+  padding: 4px 10px;
+
+  border-radius: 6px;
+}
+
+.status-upcoming {
+  background: var(--upcoming-bg);
+  color: var(--upcoming-text);
+}
+
+.status-completed {
+  background: var(--completed-bg);
+  color: var(--completed-text);
+}
+
+.status-cancelled {
+  background: var(--cancelled-bg);
+  color: var(--cancelled-text);
+}
+
+.btn-blue-primary {
+  background: #1565d8;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.btn-blue-primary:hover {
+  background: #0f4fb2;
+  color: #ffffff;
+}
+
+.tip-card {
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  transition: 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tip-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.tip-text {
+  font-size: 11px;
+}
+
+.month-text {
+  font-size: 10px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .profile-avatar-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card-profile {
+    margin-bottom: 1rem;
+  }
+}

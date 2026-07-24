@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ahmed Yasser",
+    "specialization": "Orthodontist",
+    "rating": 4.9,
+    "experience": 15,
+    "image": "images/doctors/DrAhmedYasser.png",
+    "biography": "Specialist in braces, clear aligners, and jaw alignment with over a decade of practice.",
+    "services": [
+      "Orthodontics",
+      "Clear Aligners (Invisalign)",
+      "Retainers & Jaw Realignment"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Oral and Dental Surgery",
+      "Master’s Degree in Orthodontics & Dentofacial Orthopedics",
+      "Member of the World Federation of Orthodontists (WFO)"
+    ],
+    "certificates": [
+      "Invisalign Provider Certification",
+      "Advanced Micro-Implant Anchorage Certificate"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/Orthodontist.png",
+      "images/BeforeAfter/Orthodontist1.png"
+    ],
+    "availableDays": "Saturday, Monday, Wednesday",
+    "workingHours": "9:00 AM - 3:00 PM"
+  },
+
+  {
+    "id": 2,
+    "name": "Dr. Sara Mohamed",
+    "specialization": "General Dentist",
+    "rating": 4.8,
+    "experience": 12,
+    "image": "images/doctors/DrSaraMohamed.png",
+    "biography": "Comprehensive dental care specialist focusing on preventive treatment and overall oral health.",
+    "services": [
+      "Dental Checkup & Cleaning",
+      "Fluoride Treatment",
+      "Preventive Oral Care"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Dental Surgery",
+      "Diploma in Preventive Dentistry"
+    ],
+    "certificates": [
+      "Certified Dental Infection Control Specialist"
+    ],
+    "beforeAfterImages": [],
+    "availableDays": "Saturday - Thursday",
+    "workingHours": "9:00 AM - 2:00 PM"
+  },
+
+  {
+    "id": 3,
+    "name": "Dr. Menna Mostafa",
+    "specialization": "Restorative Dentist",
+    "rating": 4.7,
+    "experience": 10,
+    "image": "images/doctors/DrMennaMostafa.png",
+    "biography": "Expert in crown fittings, aesthetic tooth restorations, and composite fillings.",
+    "services": [
+      "Dental Fillings",
+      "Dental Crowns & Bridges",
+      "Tooth Reconstruction"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Dental Surgery",
+      "Master's Degree in Operative & Restorative Dentistry"
+    ],
+    "certificates": [
+      "Direct & Indirect Composite Restoration Masterclass"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/RestorativeDentist.png",
+      "images/BeforeAfter/RestorativeDentist1.png"
+    ],
+    "availableDays": "Sunday, Tuesday, Thursday",
+    "workingHours": "12:00 PM - 6:00 PM"
+  },
+
+  {
+    "id": 4,
+    "name": "Dr. Mohamed Sabry",
+    "specialization": "Endodontist",
+    "rating": 4.8,
+    "experience": 9,
+    "image": "images/doctors/DrMohamedSabry.png",
+    "biography": "Dedicated to painless root canal treatments and saving natural teeth.",
+    "services": [
+      "Root Canal Treatment",
+      "Emergency Dental Care",
+      "Tooth Pain Diagnosis"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Dental Surgery",
+      "Master's Degree in Endodontics"
+    ],
+    "certificates": [
+      "Microscopic Root Canal Therapy Certification"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/Endodontist.png"
+    ],
+    "availableDays": "Saturday, Monday, Thursday",
+    "workingHours": "2:00 PM - 8:00 PM"
+  },
+
+  {
+    "id": 5,
+    "name": "Dr. Khaled Ahmed",
+    "specialization": "Implantologist",
+    "rating": 4.5,
+    "experience": 8,
+    "image": "images/doctors/DrKhaledAhmed.png",
+    "biography": "Advanced dental implant surgeon focused on functional and natural-looking tooth replacements.",
+    "services": [
+      "Dental Implants",
+      "Bone Grafting",
+      "All-on-4 Tooth Replacement"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Oral Surgery"
+    ],
+    "certificates": [
+      "Guided Bone Regeneration Certification"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/Implantologist.png",
+      "images/BeforeAfter/Implantologist1.png"
+    ],
+    "availableDays": "Sunday, Wednesday",
+    "workingHours": "10:00 AM - 5:00 PM"
+  },
+
+  {
+    "id": 6,
+    "name": "Dr. Mariam Adel",
+    "specialization": "Cosmetic Dentist",
+    "rating": 4.4,
+    "experience": 7,
+    "image": "images/doctors/DrMariamAdel.png",
+    "biography": "Passionate about smile makeovers, teeth whitening, and porcelain veneers.",
+    "services": [
+      "Teeth Whitening",
+      "Porcelain Veneers",
+      "Hollywood Smile Makeover"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Oral & Dental Medicine",
+      "Postgraduate Diploma in Aesthetic Dentistry"
+    ],
+    "certificates": [
+      "Digital Smile Design (DSD) Certified Master",
+      "Porcelain Veneers Advanced Techniques"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/CosmeticDentist.png",
+      "images/BeforeAfter/CosmeticDentist1.png"
+    ],
+    "availableDays": "Saturday, Tuesday, Wednesday",
+    "workingHours": "3:00 PM - 8:00 PM"
+  },
+
+  {
+    "id": 7,
+    "name": "Dr. Michael George",
+    "specialization": "Oral Surgeon",
+    "rating": 4.3,
+    "experience": 5,
+    "image": "images/doctors/DrMichaelGeorge.png",
+    "biography": "Specialized in complex extractions, wisdom tooth surgery, and maxillofacial care.",
+    "services": [
+      "Tooth Extraction",
+      "Wisdom Tooth Surgery",
+      "Jaw Surgery"
+    ],
+    "qualifications": [
+      "B.D.S. Degree in Oral Surgery",
+      "Residency in Oral and Maxillofacial Surgery"
+    ],
+    "certificates": [
+      "Surgical Extractions & Bone Grafting Specialist",
+      "Sedation Dentistry & Patient Care Certificate"
+    ],
+    "beforeAfterImages": [
+      "images/BeforeAfter/OralSurgeon.png",
+      "images/BeforeAfter/OralSurgeon2.png"
+    ],
+    "availableDays": "Monday, Thursday",
+    "workingHours": "11:00 AM - 6:00 PM"
+  }
+]

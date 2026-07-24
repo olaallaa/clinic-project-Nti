@@ -1,0 +1,244 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Dental Checkup",
+            "description": "Regular dental checkups help detect oral diseases early and keep teeth healthy.",
+            "category": "Oral Health",
+            "image": "images/articles/checkup.jpg",
+            "url": "https://www.healthpartners.com/blog/dental-preventive-visit/"
+        },
+        {
+            "id": 2,
+            "title": "Oral Hygiene",
+            "description": "Brushing twice daily and flossing daily reduces plaque and cavities.",
+            "category": "Oral Health",
+            "image": "images/articles/oral-hygiene.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/16914-oral-hygiene"
+        },
+        {
+            "id": 3,
+            "title": "Preventing Tooth Decay",
+            "description": "Limiting sugar and using fluoride toothpaste helps prevent decay.",
+            "category": "Oral Health",
+            "image": "images/articles/cavity.jpg",
+            "url": "https://www.nidcr.nih.gov/health-info/tooth-decay/more-info/tooth-decay-process"
+        },
+        {
+            "id": 4,
+            "title": "Tooth Sensitivity",
+            "description": "Sensitive teeth can result from enamel wear or gum recession.",
+            "category": "Oral Health",
+            "image": "images/articles/sensitivity.jpg",
+            "url": "https://my.clevelandclinic.org/health/symptoms/10954-teeth-sensitivity"
+        },
+        {
+            "id": 5,
+            "title": "Bad Breath",
+            "description": "Good oral hygiene and hydration can reduce bad breath.",
+            "category": "Oral Health",
+            "image": "images/articles/breath.jpg",
+            "url": "https://www.mayoclinic.org/diseases-conditions/bad-breath/symptoms-causes/syc-20350922"
+        },
+        {
+            "id": 6,
+            "title": "Traditional Braces",
+            "description": "Braces gradually align teeth and improve bite.",
+            "category": "Orthodontics",
+            "image": "images/articles/braces.jpg",
+            "url": "https://smilesbyeberle.com/traditional-braces-pros-and-cons/"
+        },
+        {
+            "id": 7,
+            "title": "Clear Aligners",
+            "description": "Clear aligners are removable trays for correcting alignment.",
+            "category": "Orthodontics",
+            "image": "images/articles/aligners.jpg",
+            "url": "https://aaoinfo.org/whats-trending/braces-vs-clear-aligners/"
+        },
+        {
+            "id": 8,
+            "title": "Retainers",
+            "description": "Retainers help maintain teeth after orthodontic treatment.",
+            "category": "Orthodontics",
+            "image": "images/articles/retainers.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/10899-teeth-retainer"
+        },
+        {
+            "id": 9,
+            "title": "Crooked Teeth",
+            "description": "Early treatment can simplify correcting crooked teeth.",
+            "category": "Orthodontics",
+            "image": "images/articles/crooked.jpg",
+            "url": "https://www.newmouth.com/blog/fix-crooked-teeth/"
+        },
+        {
+            "id": 10,
+            "title": "Bite Problems",
+            "description": "Orthodontic care improves overbite, underbite and crossbite.",
+            "category": "Orthodontics",
+            "image": "images/articles/bite.jpg",
+            "url": "https://aaoinfo.org/whats-trending/7-common-bite-problems/"
+        },
+        {
+            "id": 11,
+            "title": "Teeth Whitening",
+            "description": "Professional whitening safely brightens stained teeth.",
+            "category": "Teeth Whitening",
+            "image": "images/articles/whitening.jpg",
+            "url": "https://www.rollinghillsfamilydentistry.com/is-professional-teeth-whitening-worth-it/"
+        },
+        {
+            "id": 12,
+            "title": "Dental Veneers",
+            "description": "Veneers improve the appearance of chipped or stained teeth.",
+            "category": "Teeth Whitening",
+            "image": "images/articles/veneers.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/23522-dental-veneers"
+        },
+        {
+            "id": 13,
+            "title": "Smile Makeover",
+            "description": "A smile makeover combines cosmetic dental procedures.",
+            "category": "Teeth Whitening",
+            "image": "images/articles/smile.jpg",
+            "url": "https://arvadadentalcenter.com/what-is-smile-makeover/"
+        },
+        {
+            "id": 14,
+            "title": "Tooth Bonding",
+            "description": "Bonding repairs small chips and gaps.",
+            "category": "Teeth Whitening",
+            "image": "images/articles/bonding.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/10922-dental-bonding"
+        },
+        {
+            "id": 15,
+            "title": "Cosmetic Fillings",
+            "description": "Tooth-colored fillings restore teeth naturally.",
+            "category": "Teeth Whitening",
+            "image": "images/articles/filling.jpg",
+            "url": "https://www.mouthhealthy.org/all-topics-a-z/composite-fillings"
+        },
+        {
+            "id": 16,
+            "title": "Dental Implants",
+            "description": "Dental implants replace missing teeth with durable restorations.",
+            "category": "Dental Implants",
+            "image": "images/articles/implants.jpg",
+            "url": "https://www.mayoclinic.org/tests-procedures/dental-implant-surgery/about/pac-20384622"
+        },
+        {
+            "id": 17,
+            "title": "Implant Procedure",
+            "description": "Implant placement is completed in several treatment stages.",
+            "category": "Dental Implants",
+            "image": "images/articles/procedure.jpg",
+            "url": "https://www.deltadental.com/protect-my-smile/procedures/dental-implant/step-by-step-procedure/"
+        },
+        {
+            "id": 18,
+            "title": "Implant Aftercare",
+            "description": "Proper hygiene helps implants last for many years.",
+            "category": "Dental Implants",
+            "image": "images/articles/aftercare.jpg",
+            "url": "https://www.mayoclinic.org/tests-procedures/dental-implant-surgery/about/pac-20384622"
+        },
+        {
+            "id": 19,
+            "title": "Bone Grafting",
+            "description": "Bone grafting may be needed before implant placement.",
+            "category": "Dental Implants",
+            "image": "images/articles/bone-graft.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/21727-dental-bone-graft"
+        },
+        {
+            "id": 20,
+            "title": "Benefits of Implants",
+            "description": "Implants improve chewing, speech and appearance.",
+            "category": "Dental Implants",
+            "image": "images/articles/benefits.jpg",
+            "url": "https://www.dentalassociates.com/blog/benefits-dental-implants-over-dentures"
+        },
+        {
+            "id": 21,
+            "title": "Children Dental Care",
+            "description": "Healthy habits should begin with the first tooth.",
+            "category": "Pediatric Dentistry",
+            "image": "images/articles/children.jpg",
+            "url": "https://www.moh.gov.sa/en/awarenessplateform/childshealth/pages/childrendentalcare.aspx"
+        },
+        {
+            "id": 22,
+            "title": "Baby Teeth",
+            "description": "Primary teeth are important for speech and chewing.",
+            "category": "Pediatric Dentistry",
+            "image": "images/articles/baby -teeth.jpg",
+            "url": "https://www.mouthhealthy.org/all-topics-a-z/baby-teeth"
+        },
+        {
+            "id": 23,
+            "title": "First Dental Visit",
+            "description": "Children should visit the dentist by age one.",
+            "category": "Pediatric Dentistry",
+            "image": "images/articles/first-visit.jpg",
+            "url": "https://www.stanfordchildrens.org/en/topic/default?id=a-childs-first-dental-visit-fact-sheet-1-1509"
+        },
+        {
+            "id": 24,
+            "title": "Fluoride for Kids",
+            "description": "Fluoride strengthens enamel and prevents cavities.",
+            "category": "Pediatric Dentistry",
+            "image": "images/articles/fluoride.jpg",
+            "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/fluoride-for-kids"
+        },
+        {
+            "id": 25,
+            "title": "Dental Sealants",
+            "description": "Sealants protect molars from decay.",
+            "category": "Pediatric Dentistry",
+            "image": "images/articles/sealants.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/10912-sealants"
+        },
+        {
+            "id": 26,
+            "title": "Wisdom Teeth Removal",
+            "description": "Wisdom teeth may require removal to avoid complications.",
+            "category": "Surgery",
+            "image": "images/articles/wisdom.jpg",
+            "url": "https://www.mayoclinic.org/tests-procedures/wisdom-tooth-extraction/about/pac-20395268"
+        },
+        {
+            "id": 27,
+            "title": "Tooth Extraction",
+            "description": "Extraction is recommended for severely damaged teeth.",
+            "category": "Surgery",
+            "image": "images/articles/extraction.jpg",
+            "url": "https://my.clevelandclinic.org/health/treatments/22120-tooth-extraction"
+        },
+        {
+            "id": 28,
+            "title": "Root Canal Treatment",
+            "description": "Root canal treatment removes infected pulp and saves teeth.",
+            "category": "Surgery",
+            "image": "images/articles/root-canal.jpg",
+            "url": "https://www.mayoclinic.org/diseases-conditions/tooth-abscess/in-depth/root-canal/art-20585454"
+        },
+        {
+            "id": 29,
+            "title": "Gum Disease Treatment",
+            "description": "Early periodontal treatment protects teeth and gums.",
+            "category": "Surgery",
+            "image": "images/articles/gum.jpg",
+            "url": "https://my.clevelandclinic.org/health/diseases/16620-periodontitis"
+        },
+        {
+            "id": 30,
+            "title": "Dental Emergency",
+            "description": "Immediate dental care is important after serious injury.",
+            "category": "Surgery",
+            "image": "images/articles/emergency.jpg",
+            "url": "https://my.clevelandclinic.org/health/articles/11368--dental-emergencies-what-to-do"
+        }
+    ]
+}

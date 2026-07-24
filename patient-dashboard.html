@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="SmileCare patient dashboard to manage appointments and search medicine information."
+    />
+
+    <title>Patient Dashboard | SmileCare</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/global.css" />
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link rel="stylesheet" href="css/patient.css" />
+  </head>
+
+  <body class="bg-light">
+    <div id="navbarContainer"></div>
+
+    <main class="container pt-5 mt-5">
+      <section class="mb-5">
+        <h1 class="display-6 fw-bold mb-2">
+          Welcome Back,
+
+          <span id="dashGreetingName"> Patient </span>
+
+          👋
+        </h1>
+
+        <p class="text-muted mb-0">
+          Here's what's happening with your health today.
+        </p>
+      </section>
+
+      <section>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card-profile p-4 h-100 text-center">
+              <img
+                id="cardPatientImage"
+                src="images/default-avatar.png"
+                alt="Patient Profile"
+                loading="lazy"
+                class="profile-avatar-img"
+              />
+
+              <h4 id="cardPatientName" class="fw-bold mb-1">Patient Name</h4>
+
+              <div
+                class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-4"
+              >
+                Patient
+              </div>
+
+              <div class="text-start small border-top pt-3">
+                <div class="mb-3">
+                  <i class="fa-regular fa-envelope text-primary me-2"></i>
+
+                  <span id="cardPatientEmail"> patient@email.com </span>
+                </div>
+
+                <div class="mb-3">
+                  <i class="fa-solid fa-phone text-primary me-2"></i>
+
+                  <span id="cardPatientPhone"> +20 100 000 0000 </span>
+                </div>
+
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div
+              class="card border-0 shadow-sm rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h5 class="fw-bold mb-0">Upcoming Appointments</h5>
+
+                  <span
+                    id="appointmentCount"
+                    class="badge bg-primary rounded-pill"
+                  >
+                    0
+                  </span>
+                </div>
+
+                <div id="dashAppointmentsList"></div>
+              </div>
+
+              <a href="appointment.html" class="btn btn-blue-primary mt-4">
+                <i class="fa-regular fa-calendar-check me-2"></i>
+
+                Book New Appointment
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h5 class="fw-bold mb-0">Medicine Search</h5>
+
+                <i class="fa-solid fa-capsules text-primary"></i>
+              </div>
+
+              <p class="text-muted small mb-3">
+                Search for medicine information.
+              </p>
+
+              <form id="medicineSearchForm" class="mb-3">
+                <label for="medicineQuery" class="visually-hidden">
+                  Search Medicine
+                </label>
+
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="medicineQuery"
+                    class="form-control"
+                    placeholder="Enter medicine name..."
+                    required
+                  />
+
+                  <button class="btn btn-blue-primary" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+
+              <div class="bg-light rounded-3 p-3 flex-grow-1">
+                <p class="fw-semibold mb-2">Search results include:</p>
+
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check text-primary me-2"></i>
+
+                    Generic Name
+                  </li>
+
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check text-primary me-2"></i>
+
+                    Brand Name
+                  </li>
+
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check text-primary me-2"></i>
+
+                    Purpose
+                  </li>
+
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check text-primary me-2"></i>
+
+                    Warnings
+                  </li>
+
+                  <li>
+                    <i class="fa-regular fa-circle-check text-primary me-2"></i>
+
+                    Side Effects
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5">
+        <div id="medicineResultsContainer"></div>
+      </section>
+
+      <section>
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <div
+              class="tip-icon bg-primary-subtle rounded-circle d-flex justify-content-center align-items-center p-2"
+            >
+              <i class="fa-solid fa-tooth text-primary"></i>
+            </div>
+
+            <h5 class="fw-bold mb-0">Quick Dental Tips</h5>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="tip-card p-3 h-100">
+                <i class="fa-solid fa-teeth-open text-primary fs-2 mb-3"></i>
+
+                <h6 class="fw-semibold">Brush Twice Daily</h6>
+
+                <p class="text-muted small mb-0">
+                  Brush your teeth for at least two minutes every morning and
+                  evening.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="tip-card p-3 h-100">
+                <i class="fa-solid fa-box-archive text-primary fs-2 mb-3"></i>
+
+                <h6 class="fw-semibold">Use Dental Floss</h6>
+
+                <p class="text-muted small mb-0">
+                  Floss every day to remove plaque between your teeth.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="tip-card p-3 h-100">
+                <i
+                  class="fa-regular fa-calendar-check text-primary fs-2 mb-3"
+                ></i>
+
+                <h6 class="fw-semibold">Visit Regularly</h6>
+
+                <p class="text-muted small mb-0">
+                  Schedule a dental check-up every six months.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="tip-card p-3 h-100">
+                <i class="fa-solid fa-droplet text-primary fs-2 mb-3"></i>
+
+                <h6 class="fw-semibold">Stay Hydrated</h6>
+
+                <p class="text-muted small mb-0">
+                  Drinking enough water helps maintain healthy gums and teeth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footerContainer"></div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+
+    <script src="scripts/navbar.js"></script>
+
+    <script src="scripts/patient.js"></script>
+
+    <script src="scripts/medicine.js"></script>
+  </body>
+</html>

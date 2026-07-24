@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Dental Checkup & Cleaning",
+    "price": 300,
+    "duration": "30 Minutes",
+    "description": "Professional cleaning to remove plaque and tartar.",
+    "image": "images/services/cleaning.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Teeth Whitening",
+    "price": 450,
+    "duration": "45 Minutes",
+    "description": "Advanced laser whitening treatment for a bright smile.",
+    "image": "images/services/whitening.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dental Fillings",
+    "price": 250,
+    "duration": "40 Minutes",
+    "description": "Tooth-colored composite restoration to repair cavities.",
+    "image": "images/services/filling.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Root Canal Treatment",
+    "price": 850,
+    "duration": "75 Minutes",
+    "description": "Painless endodontic therapy to save natural teeth.",
+    "image": "images/services/root_canal.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tooth Extraction",
+    "price": 200,
+    "duration": "35 Minutes",
+    "description": "Gentle and comfortable removal of damaged teeth.",
+    "image": "images/services/extraction.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dental Implants",
+    "price": 1200,
+    "duration": "90 Minutes",
+    "description": "Permanent titanium tooth replacement fixture with crown.",
+    "image": "images/services/implant.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Orthodontics",
+    "price": 150,
+    "duration": "45 Minutes",
+    "description": "Comprehensive orthodontic assessment & 3D scan.",
+    "image": "images/services/braces.jpg"
+  }
+]

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articles</title>
+    <meta name="description" content="This is Articles Page" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="images\medical.png" />
+  </head>
+
+  <body>
+    <div id="navbarContainer"></div>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <span class="subtitle">Dental Articles</span>
+            <h1>Learn More About Modern Dentistry</h1>
+            <p>
+              Explore the latest articles about oral health, dental treatments,
+              teeth whitening, orthodontics, implants, and much more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Search-->
+    <section class="search-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="search-box">
+              <input
+                type="search"
+                id="srch"
+                class="form-control"
+                placeholder="Search Dental Articles..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+
+    <section class="categories mb-5">
+      <div class="container">
+        <ul class="d-flex justify-content-center flex-wrap">
+          <li class="active" category="All">All</li>
+          <li category="Oral Health">Oral Health</li>
+          <li category="Orthodontics">Orthodontics</li>
+          <li category="Dental Implants">Implants</li>
+          <li category="Teeth Whitening">Whitening</li>
+          <li category="Pediatric Dentistry">Pediatric</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="articles py-5">
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <span>Latest Articles</span>
+          <h2>Dental Health Articles</h2>
+          <p>
+            Read trusted articles about dental care, oral hygiene, and modern
+            treatment techniques.
+          </p>
+        </div>
+        <div class="row g-4" id="articlesContainer"></div>
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/articles.js"></script>
+  </body>
+</html>

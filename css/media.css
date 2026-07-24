@@ -1,0 +1,432 @@
+
+@media (max-width: 992px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 16px 5%;
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+
+  .logo {
+    margin-left: 0;
+    z-index: 1100;
+  }
+
+  .logo-icon {
+    margin-left: 0;
+  }
+
+  .menu-checkbox {
+    display: none;
+  }
+
+  .menu-toggle-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .menu-toggle-label span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #0A2540;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    max-width: 80vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 100px 25px 20px;
+    gap: 10px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: right 0.35s ease;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  .header-btns {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: -100%;
+    height: auto;
+    width: 280px;
+    max-width: 80vw;
+    background-color: #ffffff;
+    padding: 20px 25px 30px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: right 0.35s ease;
+    z-index: 1050;
+  }
+
+  .menu-checkbox:checked ~ .navbar,
+  .menu-checkbox:checked ~ .header-btns {
+    right: 0 ;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    color: #0A2540;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 12px 10px;
+    border-bottom: 1px solid #EEF3F8;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .header-btns .btn-login,
+  .header-btns .btn-register {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 6% 90px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-main-img {
+    height: 340px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 80px 6%;
+  }
+
+  .about-image,
+  .about-content {
+    max-width: 100%;
+  }
+
+  .services {
+    padding: 80px 6%;
+  }
+
+  .service-card {
+    width: 47%;
+  }
+
+  .features-content {
+    flex-wrap: wrap;
+  }
+
+  .features-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 220px;
+}
+
+  .doctors-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .doctors-card {
+    width: 45%;
+  }
+
+  .gallery-content {
+    flex-wrap: wrap;
+  }
+
+ .gallery-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+#articles-content .single-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45%;
+}
+
+  .medical-store {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .medical-top {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .products {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner,
+  .book-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-content,
+  .book-banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 40px 5%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .states {
+    flex-wrap: wrap;
+    padding: 40px 6%;
+    row-gap: 25px;
+  }
+
+  .state-item {
+    width: 50%;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .features-content {
+    flex-direction: column;
+  }
+
+  .features-card {
+    width: 100%;
+  }
+
+  .doctors-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctors-card {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .gallery-content {
+    flex-direction: column;
+  }
+
+  .gallery-card {
+    width: 100%;
+    height: 300px;
+  }
+
+ #articles-content .single-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+  .articles-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .medical-store {
+    flex-direction: column;
+  }
+
+  .products {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .banner,
+  .book-banner {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .banner-btns {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 6%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-side-col {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-footer-icons {
+    justify-content: center;
+  }
+
+  .footer-links-call p {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-last span {
+    margin: 0 8px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .logo-icon {
+    padding: 9px 11px;
+    font-size: 18px;
+  }
+
+  .navbar a {
+    margin: 4px 6px;
+    font-size: 14px;
+  }
+
+  .header-btns {
+    gap: 8px;
+  }
+
+  .btn-login,
+  .btn-register {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-main-img {
+    height: 240px;
+  }
+
+  .hero-min-card {
+    left: 0;
+    bottom: 15px;
+    width: 90%;
+  }
+
+  .state-item {
+    width: 100%;
+  }
+
+  .state-item h3 {
+    font-size: 32px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .services-top h2,
+  .doctors-top h2,
+  .gallery-top h2,
+  .articles-top h2 {
+    font-size: 26px;
+  }
+
+  .doctors-card {
+    padding: 80px 20px 30px;
+  }
+
+  .card-img {
+    left: 20px;
+  }
+
+  .btn-book {
+    width: 100%;
+    text-align: center;
+  }
+}
