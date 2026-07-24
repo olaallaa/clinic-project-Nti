@@ -1,36 +1,18 @@
 document.addEventListener("DOMContentLoaded", init);
 
-async function init() {
-  let currentUser = null;
+function init() {
 
-  try {
-    currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  } catch (error) {
-    console.error("Failed to read current user", error);
-  }
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-  if (!currentUser || currentUser.role !== "patient") {
+  if (!currentUser || currentUser.role != "patient") {
     window.location.href = "login.html";
-
     return;
   }
 
-  let appointments = [];
-
-  try {
-    const storedAppointments = localStorage.getItem("appointments");
-
-    if (storedAppointments) {
-      appointments = JSON.parse(storedAppointments);
-    }
-  } catch (error) {
-    console.error("Failed to load appointments", error);
-  }
+  let appointments = JSON.parse(localStorage.getItem("appointments")) || [];
 
   renderProfile(currentUser);
-
   renderAppointments(currentUser, appointments);
-
   attachEvents(currentUser);
 }
 
@@ -120,8 +102,16 @@ function renderAppointments(user, appointments) {
   userAppointments.sort(function (a, b) {
     return new Date(a.date) - new Date(b.date);
   });
+  
+  let cartona = "";
 
-  container.innerHTML = userAppointments.map(createAppointmentCard).join("");
+for (let i = 0; i < userAppointments.length; i++) {
+
+  cartona += createAppointmentCard(userAppointments[i]);
+
+}
+
+container.innerHTML = cartona;
 }
 
 function createAppointmentCard(app) {
@@ -190,8 +180,11 @@ function attachEvents(user) {
   }
 
   container.addEventListener("click", function (event) {
-    const button = event.target.closest(".cancel-btn");
+    if (event.target.classList.contains("cancel-btn")) {
 
+    cancelAppointment(Number(event.target.dataset.id), user);
+
+    }
     if (!button) {
       return;
     }
@@ -222,18 +215,4 @@ function cancelAppointment(id, user) {
 
   renderAppointments(user, appointments);
 }
-function getStatusClass(status) {
-  switch (status) {
-    case "Upcoming":
-      return "bg-primary";
 
-    case "Completed":
-      return "bg-success";
-
-    case "Cancelled":
-      return "bg-danger";
-
-    default:
-      return "bg-secondary";
-  }
-}
