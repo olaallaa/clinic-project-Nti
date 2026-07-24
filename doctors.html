@@ -5,18 +5,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="Browse SmileCare doctors, search by specialty, compare ratings, and book appointments online."
-    />
-
-    <meta name="author" content="SmileCare Team" />
-
-    <meta
-      name="keywords"
-      content="dentists, dental clinic, doctors, appointments, SmileCare"
-    />
-
     <title>SmileCare | Doctors</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -36,7 +24,7 @@
 
     <main class="container pt-5 pb-5 mt-5">
       <section class="text-center mb-5">
-        <h1 class="display-5 fw-bold">Find Your Dentist</h1>
+        <h1 class="fw-bold fw-bold">Find Your Dentist</h1>
 
         <p class="text-muted mb-0">
           Search experienced dentists, compare ratings, and book your
@@ -44,7 +32,7 @@
         </p>
       </section>
 
-      <section aria-labelledby="filterHeading" class="mb-4">
+      <section  class="mb-4">
         <h2 id="filterHeading" class="visually-hidden">
           Doctor Search and Filters
         </h2>
@@ -59,7 +47,6 @@
               <span class="input-group-text bg-white border-end-0">
                 <i
                   class="fa-solid fa-magnifying-glass text-muted"
-                  aria-hidden="true"
                 >
                 </i>
               </span>
@@ -69,7 +56,6 @@
                 id="searchInput"
                 class="form-control border-start-0"
                 placeholder="Search by doctor name..."
-                autocomplete="off"
               />
             </div>
           </div>
@@ -115,16 +101,13 @@
       </section>
 
       <section class="d-flex justify-content-between align-items-center mb-4">
-        <p id="doctorCount" class="h5 fw-semibold mb-0">Loading doctors...</p>
-
+<h5 id="doctorCount"></h5>
         <p id="avgRatingText" class="text-muted mb-0"></p>
       </section>
 
       <section
         id="loadingState"
         class="text-center py-5"
-        aria-live="polite"
-        aria-busy="true"
       >
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden"> Loading... </span>
@@ -136,16 +119,15 @@
       <section id="emptyState" class="d-none text-center py-5">
         <i
           class="fa-solid fa-user-doctor fa-3x text-secondary mb-3"
-          aria-hidden="true"
         >
         </i>
 
-        <h3 class="h4">No Doctors Found</h3>
+        <h4>No Doctors Found</h4>
 
         <p class="text-muted">Try searching with another name or specialty.</p>
       </section>
 
-      <section id="doctorList" class="row g-4" aria-live="polite"></section>
+      <section id="doctorList" class="row g-4"></section>
     </main>
 
     <div id="footerContainer"></div>
